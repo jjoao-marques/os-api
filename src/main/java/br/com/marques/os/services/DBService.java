@@ -26,8 +26,8 @@ public class DBService {
     private OSRepository osRepository;
 
     public void InstanceDB() {
-        Technician t1 = new Technician(null, "João Marques", "49469111893", "16997990177");
-        Client c1 = new Client(null, "Taiane Santos", "54168773833", "16997251587");
+        Technician t1 = new Technician(null, "João Marques", "46314857015", "16997990155");
+        Client c1 = new Client(null, "Taiane Santos", "69581639071", "16997251544");
 
         OS os1 = new OS();
         os1.setPriority(Priority.HIGH);
