@@ -47,7 +47,7 @@ public class ClientService {
     public Client update(Long id, ClientDTO clientDTO) {
         Client oldObj = findById(id);
 
-        if (findByCpf(clientDTO) != null && findByCpf(clientDTO).getId() != null) {
+        if (findByCpf(clientDTO) != null && findByCpf(clientDTO).getId() != id) {
             throw  new DataIntegratyViolationException(MessageUtils.CPF_ALREADY_EXIST);
         }
 
